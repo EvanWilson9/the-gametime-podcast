@@ -86,7 +86,7 @@ export function Navbar() {
         {/* Right: Mobile Button */}
         <button
           onClick={handleOpenNav}
-          className="lg:hidden p-2 rounded-md text-white hover:bg-gray-100 transition"
+          className="lg:hidden p-2 rounded-md text-white text-2xl transition"
         >
           {isOpen ? "✕" : "☰"}
         </button>
