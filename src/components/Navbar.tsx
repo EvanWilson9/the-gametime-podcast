@@ -10,7 +10,7 @@ export function Navbar() {
   // Add scroll shadow effect
   useEffect(() => {
     const handleScroll = () => {
-      setScrollActive(window.scrollY > 20);
+      setScrollActive(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -46,7 +46,7 @@ export function Navbar() {
       {navs.map((item, index) => (
         <a href={`#${item.href}`} key={index} className="">
         <li
-          className="cursor-pointer text-white hover:text-gray-500 transition"
+          className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
           
         >
           {item.label}

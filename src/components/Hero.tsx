@@ -1,4 +1,3 @@
-import { Play, Mic } from "lucide-react";
 import HeroButton from "./ui/HeroButton";
 import heroBg from "../assets/hero-background.webp";
 
@@ -22,11 +21,11 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fadeIn">
           {/* Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
-            <span className="text-primary">
+            <span className="text-white">
               GameTime
             </span>
             <br />
-            <span className="text-foreground/90">Podcast</span>
+            <span className="text-[#be4725]">Podcast</span>
           </h1>
 
           {/* Description */}
@@ -59,7 +58,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent z-10"></div>
       </div>
     </section>
   );
