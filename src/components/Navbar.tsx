@@ -45,10 +45,8 @@ export function Navbar() {
     <ul className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8 text-lg">
       {navs.map((item, index) => (
         <a href={`#${item.href}`} key={index} className="">
-        <li
-          className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
-          
-        >
+        <li onClick={()=> setIsOpen(false)}
+          className="cursor-pointer text-white font-semibold hover:text-gray-500 transition">
           {item.label}
         </li>
         </a>

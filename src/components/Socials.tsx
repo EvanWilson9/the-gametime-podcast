@@ -23,8 +23,8 @@ const Socials = () => {
           </h2>
           <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Hit subscribe so you don't miss when we drop new episodes. 
-            We're on YouTube mostly, but you can find us elsewhere too.
+            Hit subscribe so you don&#39;t miss when we drop new episodes. 
+            We&#39;re on YouTube mostly, but you can find us elsewhere too.
           </p>
 
           {/* Social Links */}
@@ -46,9 +46,9 @@ const Socials = () => {
           {/* Newsletter */}
           <div className="max-w-md mx-auto pt-8 ">
             <div className="bg-white shadow-2xl rounded-lg p-6 space-y-4">
-              <h3 className="text-xl font-semibold">Don't Miss Out</h3>
+              <h3 className="text-xl font-semibold">Don&#39;t Miss Out</h3>
               <p className="text-sm text-muted-foreground">
-                Turn on notifications so you know when we go live. It's that simple.
+                Turn on notifications so you know when we go live. It&#39;s that simple.
               </p>
               <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-md hover:bg-[#a73b24] hover: transition">Subscribe on YouTube</button>
             </div>

@@ -6,18 +6,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   // Specify the project root directory to resolve the multiple lockfiles warning
+  typedRoutes: true,
   experimental: {
-    typedRoutes: true,
+    // other experimental options can go here
   },
-  webpack: (config) => {
-    config.resolve = config.resolve || {};
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-      path: false,
-    };
-    return config;
-  },
+  // Removed custom webpack config for Turbopack compatibility
   // Set the project root directory
   poweredByHeader: false,
   distDir: '.next',
