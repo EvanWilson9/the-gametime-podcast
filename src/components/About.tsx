@@ -8,7 +8,7 @@ const About = () => {
       name: "Host Name",
       image: HostImage,
       role: "Co-Host",
-      bio: "Born and raised on the eastside of Indianapolis. Proud Warren Central grad '15. From Friday night lights to the professional stage, bringing that genuine Warrior spirit to every sports take.",
+  bio: "Born and raised on the eastside of Indianapolis. Proud Warren Central grad &#39;15. From Friday night lights to the professional stage, bringing that genuine Warrior spirit to every sports take.",
       socials: {
         twitter: "https://twitter.com/hostname",
         instagram: "https://instagram.com/hostname",
@@ -19,7 +19,7 @@ const About = () => {
       name: "Host Name 2",
       image: HostImage,
       role: "Co-Host",
-      bio: "Eastside Indianapolis native and Warren Central alum '16. Bringing that authentic Indianapolis perspective from the halls of Warren to the airwaves.",
+  bio: "Eastside Indianapolis native and Warren Central alum &#39;16. Bringing that authentic Indianapolis perspective from the halls of Warren to the airwaves.",
       socials: {
         twitter: "https://twitter.com/hostname2",
         instagram: "https://instagram.com/hostname2",
@@ -30,7 +30,7 @@ const About = () => {
       name: "Host Name 3",
       image: HostImage,
       role: "Co-Host",
-      bio: "Warren Central '15 graduate and lifelong eastsider. From pickup games at the local courts to breaking down the biggest matchups, keeping it real with that eastside energy.",
+  bio: "Warren Central &#39;15 graduate and lifelong eastsider. From pickup games at the local courts to breaking down the biggest matchups, keeping it real with that eastside energy.",
       socials: {
         twitter: "https://twitter.com/hostname3",
         instagram: "https://instagram.com/hostname3",
@@ -67,11 +67,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
       <h2 className="text-4xl md:text-5xl font-bold">
-        What We're <span className="text-[#be4725]">About</span>
+  What We&#39;re <span className="text-[#be4725]">About</span>
       </h2>
   <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4"></div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-                We're just a crew from Indianapolis who love talking sports. 
+                We&#39;re just a crew from Indianapolis who love talking sports. 
                 No fancy studios or corporate sponsors—just good conversation, 
                 cold drinks, and real opinions on the games that matter to us.
             </p>
