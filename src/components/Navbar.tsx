@@ -31,6 +31,10 @@ export function Navbar() {
         href: "about"
     },
     {
+        label: "Live",
+        href: "live"
+    },
+    {
         label: "Merch",
         href: "merch"
     },
