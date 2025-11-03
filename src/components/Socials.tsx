@@ -3,9 +3,9 @@ import { Youtube, Twitter, Instagram, Facebook } from "lucide-react";
 const Socials = () => {
   const platforms = [
     { name: "YouTube", icon: Youtube, url: "https://www.youtube.com/@Game_Time_Podcast" },
-    { name: "Twitter", icon: Twitter, url: "#" },
-    { name: "Instagram", icon: Instagram, url: "#" },
-    { name: "Facebook", icon: Facebook, url: "#" }
+    { name: "Twitter", icon: Twitter, url: "" },
+    { name: "Instagram", icon: Instagram, url: "" },
+    { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/groups/1387689575793596" }
   ];
 
   return (
@@ -50,7 +50,9 @@ const Socials = () => {
               <p className="text-sm text-muted-foreground">
                 Turn on notifications so you know when we go live. It&#39;s that simple.
               </p>
-              <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-md hover:bg-[#a73b24] hover: transition">Subscribe on YouTube</button>
+              <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+                <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-md hover:bg-[#a73b24] hover: transition">Subscribe on YouTube</button>
+              </a>
             </div>
           </div>
         </div>

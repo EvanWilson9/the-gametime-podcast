@@ -1,14 +1,17 @@
 import { Mic2, Users, Trophy, Twitter, Instagram, Mail } from "lucide-react";
-import HostImage from "../assets/template-person.jpg";
+import DarrellImage from "../assets/darrell_img.jpg";
+import IsaiahImage from "../assets/isaiah_img.jpg";
+import RamonImage from "../assets/ramon_img.jpg";
+
 import Image from "next/image";
 
 const About = () => {
   const hosts = [
     {
-      name: "Host Name",
-      image: HostImage,
+      name: "Darrell Cotherin",
+      image: DarrellImage,
       role: "Co-Host",
-  bio: "Born and raised on the eastside of Indianapolis. Proud Warren Central grad &#39;15. From Friday night lights to the professional stage, bringing that genuine Warrior spirit to every sports take.",
+      bio: "Darrell Cothern Sr, Warren Central grad, US Army veteran and lifelong Eastsider. From pickup games at the local courts to coaching AAU, breaking down the biggest matchups, Huge NFL, fan longtime Pacers fan, love the Indiana Hoosiers and Alabama Cimson Tide. Always keeping it real with that Eastside energy.",
       socials: {
         twitter: "https://twitter.com/hostname",
         instagram: "https://instagram.com/hostname",
@@ -16,10 +19,10 @@ const About = () => {
       }
     },
     {
-      name: "Host Name 2",
-      image: HostImage,
+      name: "Isaiah Hoffman",
+      image: IsaiahImage,
       role: "Co-Host",
-  bio: "Eastside Indianapolis native and Warren Central alum &#39;16. Bringing that authentic Indianapolis perspective from the halls of Warren to the airwaves.",
+      bio: "Isaiah Hoffman is a Warren Central Grad and sports broadcaster at Indiana University East, currently in his senior year, and the co-host of The Game Time Podcast. His strongest focus is covering the NBA, where he hosts Game Time: After Hours a late-night segment breaking down the biggest games, performances, and storylines around the league.",
       socials: {
         twitter: "https://twitter.com/hostname2",
         instagram: "https://instagram.com/hostname2",
@@ -27,10 +30,10 @@ const About = () => {
       }
     },
     {
-      name: "Host Name 3",
-      image: HostImage,
+      name: "Ramon Stallings",
+      image: RamonImage,
       role: "Co-Host",
-  bio: "Warren Central &#39;15 graduate and lifelong eastsider. From pickup games at the local courts to breaking down the biggest matchups, keeping it real with that eastside energy.",
+      bio: "Ramon Stallings hails from the People's Republic of Gary.  He is a former athlete, parent of a former athlete, grandparent of a current athlete, Coach, athletic administrator, mentor and all around good dude.  Only thing he loves more than sports is THE OHIO STATE BUCKEYES...O-H.",
       socials: {
         twitter: "https://twitter.com/hostname3",
         instagram: "https://instagram.com/hostname3",
@@ -111,7 +114,7 @@ const About = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6">
                       <Image 
-                        src={HostImage}
+                        src={host.image}
                         alt="Host image"
                         fill={true}
                         className="object-cover"

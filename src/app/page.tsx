@@ -2,6 +2,7 @@
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Live from "@/components/Live";
 import { Merch } from "@/components/Merch";
 import { Navbar } from "@/components/Navbar";
 import Socials from "@/components/Socials";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Live />
       <Merch />
       <Socials />
       <Footer />

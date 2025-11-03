@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/gametime-logo.png";
 import React, { useEffect, useState } from "react";
 
 export function Navbar() {
@@ -71,16 +71,18 @@ export function Navbar() {
             className="rounded-md"
           />
           <div className="font-bold text-2xl text-white">
-            GameTime Podcast
+            GameTime Network
           </div>
         </div>
 
         {/* Right: Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navList}
-          <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
-            Subscribe
-          </button>
+          <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+            <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
+              Subscribe
+            </button>
+          </a>
         </div>
 
         {/* Right: Mobile Button */}
@@ -100,9 +102,11 @@ export function Navbar() {
       >
         <div className="bg-[#0c121d] p-7 border-t-3 border-[#a73b24]">
           {navList}
-          <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
-            Subscribe
-          </button>
+          <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+            <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
+              Subscribe
+            </button>
+          </a>
         </div>
       </div>
     </header>
