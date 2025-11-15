@@ -41,7 +41,7 @@ const Live = () => {
             <p className="text-lg leading-relaxed">
               GameTime Live is a weekly sports talk show hosted by Isaiah Hoffman, senior sports 
               broadcaster at Indiana University East, and Darrell Cothern Sr. And Ramon Stallings Every 
-              Sunday from 12–1 PM (EST), Isaiah, Darrell and Ramon deliver energetic coverage of college 
+              Sunday from 12–1 PM (EST), Isaiah, Darrell Sr. and Ramon deliver energetic coverage of college 
               and pro sports, breaking down the biggest stories across the NFL, NBA, and college football.
             </p>
             
@@ -119,7 +119,7 @@ const Live = () => {
           <ShowCard
             logo={LiveThree}
             title="Cot's Corner"
-            description="Darrell, better known as DCot brings his unfiltered energy and passion to Cot’s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
+            description="Darrell Sr., better known as DCot brings his unfiltered energy and passion to Cot’s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
             align="left"
           />
         </div>

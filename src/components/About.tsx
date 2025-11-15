@@ -8,10 +8,10 @@ import Image from "next/image";
 const About = () => {
   const hosts = [
     {
-      name: "Darrell Cothern",
+      name: "Darrell Cothern Sr.",
       image: DarrellImage,
       role: "Co-Host",
-      bio: "Darrell Cothern, Warren Central grad, US Army veteran and lifelong Eastsider. From pickup games at the local courts to coaching AAU, breaking down the biggest matchups, Huge NFL, fan longtime Pacers fan, love the Indiana Hoosiers and Alabama Cimson Tide. Always keeping it real with that Eastside energy.",
+      bio: "Darrell Cothern Sr., Warren Central grad, US Army veteran and lifelong Eastsider. From pickup games at the local courts to coaching AAU, breaking down the biggest matchups, Huge NFL, fan longtime Pacers fan, love the Indiana Hoosiers and Alabama Cimson Tide. Always keeping it real with that Eastside energy.",
       socials: {
         twitter: "https://twitter.com/hostname",
         instagram: "https://instagram.com/hostname",
