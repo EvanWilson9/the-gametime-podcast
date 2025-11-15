@@ -19,12 +19,12 @@ const Socials = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Stay in the <span className="text-[#be4725]">Loop</span>
+            Join The<span className="text-[#be4725]"> Game Time</span>
           </h2>
           <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Hit subscribe so you don&#39;t miss when we drop new episodes. 
-            We&#39;re on YouTube mostly, but you can find us elsewhere too.
+            Subscribe to the Game Time Network on YouTube and follow us on all socials to never miss an episode. 
+            Turn on post notifications because it&#39;s always Game Time.
           </p>
 
           {/* Social Links */}

@@ -11,18 +11,18 @@ const Footer = () => {
               <Mic className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <div className="font-semibold text-lg">GameTime</div>
+              <div className="font-semibold text-lg">Game Time</div>
               <div className="text-sm text-muted-foreground">Eastside Sports Pod</div>
             </div>
           </div>
 
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 GameTime Network. All rights reserved.</p>
+            <p>© 2025 Game Time Network. All rights reserved.</p>
           </div>
 
           {/* Links */}
-          <div className="flex gap-6 text-sm">
+          {/* <div className="flex gap-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               Privacy
             </a>
@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               Contact
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

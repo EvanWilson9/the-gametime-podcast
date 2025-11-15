@@ -1,7 +1,12 @@
 import React from 'react';
 import { Calendar, Clock, Youtube } from 'lucide-react';
 import LiveLogo from '../assets/live-logo.png';
+import LiveOne from '../assets/live1.png';
+import LiveTwo from '../assets/live2.png';
+import LiveThree from '../assets/live3.png';
+
 import Image from 'next/image';
+import ShowCard from './ShowCard';
 
 const Live = () => {
   return (
@@ -88,9 +93,38 @@ const Live = () => {
             </a>
           </div>
         </div>
+
+        {/* Our Other Shows Title */}
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 mt-20">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Our Other <span className="text-[#be4725]">Shows</span>
+          </h2>
+          <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4"></div>
+        </div>
+
+        <div className="space-y-16 max-w-6xl mx-auto mt-20">
+          <ShowCard
+            logo={LiveOne}
+            title="Following The Pack"
+            description="Following the Pack is an exclusive weekly series that takes you inside IU East Men’s Basketball. Hosted by senior broadcaster Isaiah Hoffman, each episode features in-depth conversations with Head Coach Mark Hester as they break down games, preparation, and the grind of an NAIA basketball season. From road trips to rivalries, this series gives fans a true behind-the-scenes look at what it takes to compete at the college level."
+            align="left"
+          />
+
+          <ShowCard
+            logo={LiveTwo}
+            title="Game Time: After Hours"
+            description="Game Time: After Hours is the late-night home for passionate NBA talk. Hosted by Isaiah Hoffman, the show delivers quick, insightful recaps, bold takes, and next-day reactions to the biggest moments across the league. From game-winners to breakout performances, Isaiah breaks down the night's action with humor, energy, and his signature &quot;Zay's Wayz&quot; Tier List."
+          />
+
+          <ShowCard
+            logo={LiveThree}
+            title="Cot's Corner"
+            description="Darrell, better known as DCot brings his unfiltered energy and passion to Cot’s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
+            align="left"
+          />
+        </div>
       </div>
 
-      {/* Background Elements */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-[#be4725]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/2 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
     </section>

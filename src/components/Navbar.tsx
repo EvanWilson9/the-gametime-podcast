@@ -31,7 +31,7 @@ export function Navbar() {
         href: "about"
     },
     {
-        label: "Live",
+        label: "Shows",
         href: "live"
     },
     {
@@ -75,7 +75,7 @@ export function Navbar() {
             className="rounded-md"
           />
           <div className="font-bold text-2xl text-white">
-            GameTime Network
+            Game Time Network
           </div>
         </div>
 

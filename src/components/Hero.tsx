@@ -1,5 +1,5 @@
 import HeroButton from "./ui/HeroButton";
-import heroBg from "../assets/hero-background.webp";
+import heroBg from "../assets/hero-background.png";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
         <img
           src={heroBg.src || '/assets/hero-background.webp'}
           alt="Sports background"
-          className="w-full h-full object-cover absolute inset-0"
+          className="w-full h-full object-fit absolute inset-0"
           style={{ zIndex: 0 }}
         />
         <div className="absolute inset-0 bg-[#0c121d]/90" />
@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fadeIn">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
             <span className="text-white">
-              GameTime
+              Game Time
             </span>
             <br />
             <span className="text-[#be4725]">Network</span>

@@ -8,10 +8,10 @@ import Image from "next/image";
 const About = () => {
   const hosts = [
     {
-      name: "Darrell Cotherin",
+      name: "Darrell Cothern",
       image: DarrellImage,
       role: "Co-Host",
-      bio: "Darrell Cothern Sr, Warren Central grad, US Army veteran and lifelong Eastsider. From pickup games at the local courts to coaching AAU, breaking down the biggest matchups, Huge NFL, fan longtime Pacers fan, love the Indiana Hoosiers and Alabama Cimson Tide. Always keeping it real with that Eastside energy.",
+      bio: "Darrell Cothern, Warren Central grad, US Army veteran and lifelong Eastsider. From pickup games at the local courts to coaching AAU, breaking down the biggest matchups, Huge NFL, fan longtime Pacers fan, love the Indiana Hoosiers and Alabama Cimson Tide. Always keeping it real with that Eastside energy.",
       socials: {
         twitter: "https://twitter.com/hostname",
         instagram: "https://instagram.com/hostname",
@@ -46,17 +46,17 @@ const About = () => {
     {
       icon: Mic2,
       title: "Real Talk",
-      description: "Honest sports conversations from folks who actually care. No scripts, no filter—just us."
+      description: "We keep it real, no scripts, no filters, no fake takes. Just genuine conversations from people who care about sports as much as you do."
     },
     {
       icon: Users,
-      title: "Eastside Roots",
-      description: "Born and raised on the eastside. Local perspective on sports, from Indy to the world."
+      title: "City Roots",
+      description: "From Indianapolis to the East Side and beyond we cover it all!"
     },
     {
       icon: Trophy,
       title: "All the Sports",
-      description: "From Pacers to Colts, college ball to the pros—we talk about what matters to us."
+      description: " From Indy’s Pacers and Colts to the college game and beyond we bring you the stories that matter most!"
     }
   ];
 
@@ -74,9 +74,10 @@ const About = () => {
       </h2>
   <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4"></div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-                We&#39;re just a crew from Indianapolis who love talking sports. 
-                No fancy studios or corporate sponsors—just good conversation, 
-                cold drinks, and real opinions on the games that matter to us.
+              Game Time Network is where sports talk meets real conversation. 
+              We cover it all from the NBA to college hoops, NFL to college sports from NCAA to NAIA through live shows, 
+              interviews, and creative digital content. What started as a single podcast has grown into a full network 
+              with shows like Game Time Live, Game Time After Hours, and Cot&#39;s Corner.
             </p>
             </div>
 
@@ -104,7 +105,7 @@ const About = () => {
               </h2>
               <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4"></div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                The voices behind the mic, bringing you authentic Indy sports talk.
+                The voices you hear. The passion you feel. This is Game Time.
               </p>
             </div>
 
