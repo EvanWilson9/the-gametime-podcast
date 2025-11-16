@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Just some folks from the eastside talking sports. No hot takes, no drama—
+            Just some guys from the eastside talking sports. No hot takes, no drama—
             just real conversations about the games we love.
           </p>
 

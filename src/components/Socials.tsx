@@ -1,10 +1,11 @@
-import { Youtube, Twitter, Instagram, Facebook } from "lucide-react";
+import { Youtube, Instagram, Facebook } from "lucide-react";
+import TikTok from "./ui/TikTok";
 
 const Socials = () => {
   const platforms = [
     { name: "YouTube", icon: Youtube, url: "https://www.youtube.com/@Game_Time_Podcast" },
-    { name: "Twitter", icon: Twitter, url: "" },
-    { name: "Instagram", icon: Instagram, url: "" },
+    { name: "TikTok", icon: TikTok, url: "https://www.tiktok.com/@gametime_podclips?_r=1&_t=ZT-91QoDWraWTO" },
+    { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/isaiah.hoff96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
     { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/groups/1387689575793596" }
   ];
 
@@ -26,6 +27,7 @@ const Socials = () => {
             Subscribe to the Game Time Network on YouTube and follow us on all socials to never miss an episode. 
             Turn on post notifications because it&#39;s always Game Time.
           </p>
+          
 
           {/* Social Links */}
           <div className="flex flex-wrap justify-center gap-4 pt-8">

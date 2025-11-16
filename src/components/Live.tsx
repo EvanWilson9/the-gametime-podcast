@@ -40,8 +40,8 @@ const Live = () => {
           <div className="space-y-8">
             <p className="text-lg leading-relaxed">
               GameTime Live is a weekly sports talk show hosted by Isaiah Hoffman, senior sports 
-              broadcaster at Indiana University East, and Darrell Cothern Sr. And Ramon Stallings Every 
-              Sunday from 12–1 PM (EST), Isaiah, Darrell Sr. and Ramon deliver energetic coverage of college 
+              broadcaster at Indiana University East, Darrell Cothern Sr., and Ramon Stallings Sr. every 
+              Sunday from 12–1 PM (EST), Isaiah, Darrell Sr. and Ramon Sr. deliver energetic coverage of college 
               and pro sports, breaking down the biggest stories across the NFL, NBA, and college football.
             </p>
             
@@ -56,14 +56,14 @@ const Live = () => {
               </ul>
             </div>
             <div className="text-muted-foreground italic">
-              Presented by Mack Gadis, your trusted State Farm Agent.
+              Presented by Mack Gadis, your trusted State Farm Agent. <br/>(317-894-3865)
             </div>
           </div>
 
           {/* Right Column - Watch Info */}
           <div className="flex flex-col justify-between bg-black/20 rounded-2xl p-8 space-y-8">
             <div className='flex flex-col gap-5'>
-            <h3 className="text-2xl font-bold">Watch Live Every Sunday</h3>
+            <h3 className="text-2xl font-bold">Watch Live on Sundays</h3>
             <p className="text-lg leading-relaxed">
               From bold debates to exclusive interviews, Game Time Live brings the passion and 
               perspective of real sports fans straight to your screen.
@@ -72,7 +72,7 @@ const Live = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Calendar className="w-6 h-6 text-[#be4725]" />
-                <span>Every Sunday</span>
+                <span>Sundays</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-6 h-6 text-[#be4725]" />
