@@ -22,17 +22,12 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          {/* <div className="flex gap-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Privacy
+          <div className="flex gap-6 text-sm text-center">
+            <a href="https://evanwilson.netlify.app/" className="text-muted-foreground hover:text-primary transition-colors">
+              Developed by Evan Wilson <br/>
+              <span className="text-[#be4725] font-bold">Portfolio Website</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Terms
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Contact
-            </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
