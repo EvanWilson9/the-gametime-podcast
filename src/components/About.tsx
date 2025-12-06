@@ -105,7 +105,7 @@ const About = () => {
               </h2>
               <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full mb-4"></div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                The voices you hear. The passion you feel. This is Game Time.
+                The voices you hear. The passion you feel. <br/>This is GAME TIME.
               </p>
             </div>
 

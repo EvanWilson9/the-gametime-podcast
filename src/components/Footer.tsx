@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div>
               <div className="font-semibold text-lg">Game Time</div>
-              <div className="text-sm text-muted-foreground">Eastside Sports Pod</div>
+              <div className="text-sm text-muted-foreground">Eastside Sports Network</div>
             </div>
           </div>
 
