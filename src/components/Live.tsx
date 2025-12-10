@@ -145,7 +145,7 @@ const Live = () => {
             height={260}
             alt="Grace College"
             />
-            <a href="https://www.gofevo.co" target='_blank' className='underline'>Click here for more information</a>
+            <a href="https://www.gofevo.com/event/Gracecollege2" target='_blank' className='underline'>Click here for more information</a>
           </div>
 
         </div>
