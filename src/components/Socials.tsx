@@ -3,7 +3,7 @@ import TikTok from "./ui/TikTok";
 
 const Socials = () => {
   const platforms = [
-    { name: "YouTube", icon: Youtube, url: "https://www.youtube.com/@Game_Time_Podcast" },
+    { name: "YouTube", icon: Youtube, url: "https://www.youtube.com/@Game_Time_Network" },
     { name: "TikTok", icon: TikTok, url: "https://www.tiktok.com/@gametime_networkclips?is_from_webapp=1&sender_device=pc" },
     { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/isaiah.hoff96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
     { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/groups/1387689575793596" }
@@ -52,7 +52,7 @@ const Socials = () => {
               <p className="text-sm text-muted-foreground">
                 Turn on notifications so you know when we go live. It&#39;s that simple.
               </p>
-              <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+              <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
                 <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-md hover:bg-[#a73b24] hover: transition">Subscribe on YouTube</button>
               </a>
             </div>

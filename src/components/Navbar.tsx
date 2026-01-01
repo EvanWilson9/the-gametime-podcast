@@ -82,7 +82,7 @@ export function Navbar() {
         {/* Right: Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navList}
-          <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
             <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
               Subscribe
             </button>
@@ -106,7 +106,7 @@ export function Navbar() {
       >
         <div className="bg-[#0c121d] p-7 border-t-3 border-[#a73b24]">
           {navList}
-          <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
             <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
               Subscribe
             </button>

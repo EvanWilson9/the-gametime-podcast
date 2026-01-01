@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <a href="https://www.youtube.com/@Game_Time_Podcast" target="_blank">
+            <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
               <HeroButton />
             </a>
           </div>
