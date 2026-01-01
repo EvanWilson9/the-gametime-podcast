@@ -138,7 +138,7 @@ const Live = () => {
             description="The CrossTime College Football Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana’s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college football coverage anywhere online."
           />
 
-          <div className='flex flex-col gap-3 w-full items-center'>
+          {/* <div className='flex flex-col gap-3 w-full items-center'>
             <Image 
             src={GraceCollege}
             width={260}
@@ -146,7 +146,7 @@ const Live = () => {
             alt="Grace College"
             />
             <a href="https://www.gofevo.com/event/Gracecollege2" target='_blank' className='underline'>Click here for more information</a>
-          </div>
+          </div> */}
 
         </div>
       </div>
