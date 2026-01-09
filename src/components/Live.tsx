@@ -67,6 +67,9 @@ const Live = () => {
             <div className="text-muted-foreground italic">
               Jason Hancock with <a href="https://wiredtothenines.com/" className='underline' target='_blank'>Wired to the Nines</a><br/>(wiredtothenines@yahoo.com)
             </div>
+            <div className="text-muted-foreground italic">
+              Bigsy's Sports Grill -<a href="https://www.google.com/maps/dir//7802+Brookville+Rd,+Indianapolis,+IN+46239/@40.2128896,-85.4065152,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x886b4f5faa3b60fb:0xfbb50e63d1a32bf6!2m2!1d-86.030092!2d39.751396?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D" className='underline' target='_blank'>7802 Brookville Road, Indinapolis, Indiana</a><br/>(463-202-2970)
+            </div>
           </div>
 
           {/* Right Column - Watch Info */}
