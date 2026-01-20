@@ -5,7 +5,8 @@ import AfterHours from '../assets/after-hours.png';
 import AfterHoursResized from '../assets/after-hours-resized.png';
 import CotsCorner from '../assets/cots-corner.png';
 import FollowingThePack from '../assets/following-the-pack.png';
-import CrossTime from '../assets/cross-time.jpg';
+// import CrossTime from '../assets/cross-time.jpg';
+import CrossTime from '../assets/cross-time-basketball.jpg';
 
 import GraceCollege from '../assets/gracecollege.jpg';
 
@@ -137,8 +138,8 @@ const Live = () => {
 
           <ShowCard
             logo={CrossTime}
-            title="The Cross-Time College Football Show"
-            description="The CrossTime College Football Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana’s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college football coverage anywhere online."
+            title="The Cross-Time College Basketball Show"
+            description="The CrossTime College Basketball Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana’s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college basketball coverage anywhere online."
           />
 
           {/* <div className='flex flex-col gap-3 w-full items-center'>
