@@ -119,27 +119,27 @@ const Live = () => {
           <ShowCard
             logo={FollowingThePack}
             title="Following The Pack"
-            description="Following the Pack is an exclusive weekly series that takes you inside IU East Men’s Basketball. Hosted by senior broadcaster Isaiah Hoffman, each episode features in-depth conversations with Head Coach Mark Hester as they break down games, preparation, and the grind of an NAIA basketball season. From road trips to rivalries, this series gives fans a true behind-the-scenes look at what it takes to compete at the college level."
+            description="Following the Pack is an exclusive weekly series that takes you inside IU East Men&quot;s Basketball. Hosted by senior broadcaster Isaiah Hoffman, each episode features in-depth conversations with Head Coach Mark Hester as they break down games, preparation, and the grind of an NAIA basketball season. From road trips to rivalries, this series gives fans a true behind-the-scenes look at what it takes to compete at the college level."
           />
 
           <ShowCard
             logo={AfterHoursResized}
             title="GameTime: After Hours"
-            description="GameTime: After Hours is the late-night home for passionate NBA talk. Hosted by Isaiah Hoffman, the show delivers quick, insightful recaps, bold takes, and next-day reactions to the biggest moments across the league. From game-winners to breakout performances, Isaiah breaks down the night's action with humor, energy, and his signature &quot;Zay's Wayz&quot; Tier List."
+            description="Game Time After Hours is a late-night sports recap show hosted by Isaiah Hoffman, airing deep into the night whether it&quot;s midnight or 3 AM The show covers the NBA, NFL, and even NASCAR, with Isaiah breaking down games, headlines, and sharing his real, unfiltered thoughts when the rest of the world is asleep."
             style={true}
           />
 
           <ShowCard
             logo={CotsCorner}
             title="Cot's Corner"
-            description="Darrell Sr., better known as DCot brings his unfiltered energy and passion to Cot’s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
+            description="Darrell Sr., better known as DCot brings his unfiltered energy and passion to Cot&quot;s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
             subHeader='Facts Over Feelings'
           />
 
           <ShowCard
             logo={CrossTime}
             title="The Cross-Time College Basketball Show"
-            description="The CrossTime College Basketball Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana’s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college basketball coverage anywhere online."
+            description="The CrossTime College Basketball Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana&quot;s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college basketball coverage anywhere online."
           />
 
           {/* <div className='flex flex-col gap-3 w-full items-center'>
