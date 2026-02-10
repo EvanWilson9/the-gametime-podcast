@@ -20,7 +20,7 @@ const Live = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Title Section */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <div className='mb-30'><GameTimeCountdown /> </div>
+        {/* <div className='mb-30'><GameTimeCountdown /> </div> */}
         <div className='flex flex-row align-middle items-center justify-center gap-5'>
             <div className=''>
                 <Image 
