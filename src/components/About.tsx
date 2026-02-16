@@ -96,6 +96,19 @@ const About = () => {
             </div>
         </div>
         </section>
+        <section className="w-full py-12 px-4">
+          <div className="mt-10 mb-20 max-w-5xl mx-auto">
+            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/EB8VCEYPaSc"
+                title="Game Time Podcast Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+        </section>
         <section className="flex justify-center w-full py-24 px-4 relative overflow-hidden bg-[#0d1723]">
         <div className="max-w-7xl">
           <div className="container mx-auto relative z-10">

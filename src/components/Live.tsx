@@ -4,7 +4,8 @@ import LiveLogo from '../assets/live-logo.png';
 import AfterHours from '../assets/after-hours.png';
 import AfterHoursResized from '../assets/after-hours-resized.png';
 import CotsCorner from '../assets/cots-corner.png';
-import FollowingThePack from '../assets/following-the-pack.png';
+import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
+// import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
 import CrossTime from '../assets/cross-time-basketball.jpg';
 
@@ -119,9 +120,9 @@ const Live = () => {
 
         <div className="space-y-16 max-w-6xl mx-auto mt-20">
           <ShowCard
-            logo={FollowingThePack}
-            title="Following The Pack"
-            description="Following the Pack is an exclusive weekly series that takes you inside IU East Men&quot;s Basketball. Hosted by senior broadcaster Isaiah Hoffman, each episode features in-depth conversations with Head Coach Mark Hester as they break down games, preparation, and the grind of an NAIA basketball season. From road trips to rivalries, this series gives fans a true behind-the-scenes look at what it takes to compete at the college level."
+            logo={BiasWithLittleTruth}
+            title="Bias, with a Little Truth"
+            description="Reggie brings unapologetic passion, sharp instincts, and a whole lot of personality to *Bias with a Little Truth”. A sports lifer who loves about 90% of everything played with a scoreboard, the show blends genuine knowledge with the kind of bias that makes sports talk fun. Instead of pretending to be perfectly neutral, the host leans into the honesty of real viewpoints while grounding every conversation in some truth."
           />
 
           <ShowCard
