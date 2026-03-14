@@ -10,6 +10,7 @@ import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 import CrossTime from '../assets/cross-time-basketball.jpg';
 
 import GraceCollege from '../assets/gracecollege.jpg';
+import BigsysSportsGrillFlyer from "../assets/Bigsy's-Sports-Grill-Flyer.png";
 
 import Image from 'next/image';
 import ShowCard from './ShowCard';
@@ -145,15 +146,15 @@ const Live = () => {
             description="The CrossTime College Basketball Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana&quot;s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college basketball coverage anywhere online."
           />
 
-          {/* <div className='flex flex-col gap-3 w-full items-center'>
+          <div className='flex flex-col gap-3 w-full items-center'>
             <Image 
-            src={GraceCollege}
+            src={BigsysSportsGrillFlyer}
             width={260}
             height={260}
-            alt="Grace College"
+            alt="Bigsys Sports Grill Flyer"
             />
-            <a href="https://www.gofevo.com/event/Gracecollege2" target='_blank' className='underline'>Click here for more information</a>
-          </div> */}
+            {/* <a href="https://www.gofevo.com/event/Gracecollege2" target='_blank' className='underline'>Click here for more information</a> */}
+          </div>
 
         </div>
       </div>
