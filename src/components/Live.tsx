@@ -7,7 +7,8 @@ import CotsCorner from '../assets/cots-corner.png';
 import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
-import CrossTime from '../assets/cross-time-basketball.jpg';
+// import CrossTime from '../assets/cross-time-basketball.jpg';
+import SideBySide from '../assets/side-by-side.png';
 
 import GraceCollege from '../assets/gracecollege.jpg';
 import BigsysSportsGrillFlyer from "../assets/Bigsy's-Sports-Grill-Flyer.png";
@@ -141,9 +142,9 @@ const Live = () => {
           />
 
           <ShowCard
-            logo={CrossTime}
-            title="The Cross-Time College Basketball Show"
-            description="The CrossTime College Basketball Show is a weekly live crossover series presented by The Game Time Network and CrossRoads Sports. Airing every Sunday at 7 PM, the show rotates between both channels and brings together two of Indiana&quot;s fastest-growing sports platforms for one mission: delivering the most energetic, authentic, and insightful college basketball coverage anywhere online."
+            logo={SideBySide}
+            title="Side By Side"
+            description="Side By Side is a weekly recorded crossover show featuring Isaiah Hoffman of the Game Time Network and Brandon Reef of Crossroad Sports. Each week, Isaiah and Brandon break down everything happening across motorsports, with a focus on the “Big 3” NASCAR, IndyCar, and Formula 1. From race recaps and standout performances to major storylines and championship implications, Side By Side delivers in-depth discussion and analysis for passionate racing fans. If you love motorsports, this is the show for you."
           />
 
           <div className='flex flex-col gap-3 w-full items-center'>
