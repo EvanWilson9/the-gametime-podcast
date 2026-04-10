@@ -147,15 +147,14 @@ const Live = () => {
             description="Side By Side is a weekly recorded crossover show featuring Isaiah Hoffman of the Game Time Network and Brandon Reef of Crossroad Sports. Each week, Isaiah and Brandon break down everything happening across motorsports, with a focus on the “Big 3” NASCAR, IndyCar, and Formula 1. From race recaps and standout performances to major storylines and championship implications, Side By Side delivers in-depth discussion and analysis for passionate racing fans. If you love motorsports, this is the show for you."
           />
 
-          <div className='flex flex-col gap-3 w-full items-center'>
+          {/*<div className='flex flex-col gap-3 w-full items-center'>
             <Image 
             src={BigsysSportsGrillFlyer}
             width={260}
             height={260}
             alt="Bigsys Sports Grill Flyer"
             />
-            {/* <a href="https://www.gofevo.com/event/Gracecollege2" target='_blank' className='underline'>Click here for more information</a> */}
-          </div>
+          </div>*/}
 
         </div>
       </div>
