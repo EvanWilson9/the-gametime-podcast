@@ -3,7 +3,7 @@ import { Calendar, Clock, Cross, Youtube } from 'lucide-react';
 import LiveLogo from '../assets/live-logo.png';
 import AfterHours from '../assets/after-hours.png';
 import AfterHoursResized from '../assets/after-hours-resized.png';
-import CotsCorner from '../assets/cots-corner.png';
+import CotsCorner from '../assets/cotsCorner.png';
 import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
@@ -11,7 +11,6 @@ import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 import SideBySide from '../assets/side-by-side.png';
 
 import GraceCollege from '../assets/gracecollege.jpg';
-import BigsysSportsGrillFlyer from "../assets/Bigsy's-Sports-Grill-Flyer.png";
 
 import Image from 'next/image';
 import ShowCard from './ShowCard';

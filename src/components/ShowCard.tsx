@@ -32,7 +32,7 @@ const ShowCard = ({
             width={220}
             height={220}
             alt="Show logo"
-            className={`w-64 h-64 lg:w-72 lg:h-72 object-cover ${style && 'object-right'} transition-all`}
+            className={`w-64 h-64 lg:w-72 lg:h-72 object-fit ${style && 'object-right'} transition-all`}
           />
         </div>
 

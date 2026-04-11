@@ -4,8 +4,28 @@ import IsaiahImage from "../assets/isaiah_img.jpg";
 import RamonImage from "../assets/ramon_img.jpg";
 
 import Image from "next/image";
+import EventShowcase from "./EventShowcase";
 
 const About = () => {
+  const eventImages = [
+    '/images/20260404_194201[1].JPG',
+    '/images/20260404_194351[1].JPG',
+    '/images/20260404_194743[1].JPG',
+    '/images/20260404_201010[1].JPG',
+    '/images/20260404_201545[1].JPG',
+    '/images/IMG_0202[1].JPG',
+    '/images/IMG_0204[1].JPG',
+    '/images/IMG_7041.jpeg[1].jpg',
+  ];
+
+  const eventDescription = `The Game Time Network, in partnership with Bigsys, is excited to bring you exclusive in-house live events every couple of months! 🎉
+
+At our first event on April 4th, we gave away Game Time t-shirts, gift cards, and our headline prizes — 3 pairs of Pacers tickets
+
+Missed out? Don't worry our next event is coming up in late June (exact date TBD), and you'll have another chance to win big and be part of the experience.
+
+We can't wait to see you there!`;
+
   const hosts = [
     {
       name: "Darrell Cothern Sr.",
@@ -95,6 +115,13 @@ const About = () => {
             ))}
             </div>
         </div>
+        </section>
+        <section id="bigsy" className="w-full">
+          <EventShowcase 
+            title="Game Time Network @ Bigsys"
+            description={eventDescription}
+            images={eventImages}
+          />
         </section>
         <section className="w-full py-12 px-4">
           <div className="mt-10 mb-20 max-w-5xl mx-auto">
