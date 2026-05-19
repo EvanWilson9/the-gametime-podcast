@@ -116,12 +116,10 @@ export function Navbar({ isGallery } : NavbarProps) {
         {/* Right: Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navList}
-          <Link href="/gallery">
-            <button className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
+            <button onClick={()=> router.push("/gallery")} className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
               Gallery
             </button>
-          </Link>
-          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank" rel="noreferrer">
+          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
             <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
               Subscribe
             </button>
@@ -145,14 +143,15 @@ export function Navbar({ isGallery } : NavbarProps) {
       >
         <div className="bg-[#0c121d] p-7 border-t-3 border-[#a73b24]">
           {navList}
-          <Link href="/gallery">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold"
-            >
-              Gallery
-            </button>
-          </Link>
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              router.push("/gallery");
+            }}
+            className="cursor-pointer bg-white text-black mt-3 w-full px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold"
+          >
+            Gallery
+          </button>
           <a href="https://www.youtube.com/@Game_Time_Network" target="_blank" rel="noreferrer">
             <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
               Subscribe
