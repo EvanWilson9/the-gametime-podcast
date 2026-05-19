@@ -18,7 +18,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 Game Time Network. All rights reserved.</p>
+            <p>© 2026 Game Time Network. All rights reserved.</p>
           </div>
 
           {/* Links */}

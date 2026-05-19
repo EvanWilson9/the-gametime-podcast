@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface EventShowcaseProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   images: string[];
 }
 

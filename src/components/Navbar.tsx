@@ -1,9 +1,15 @@
 'use client';
 import Image from "next/image";
 import Logo from "../assets/gametime-logo.png";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Link from 'next/link'
+import { useRouter } from "next/navigation";
 
-export function Navbar() {
+interface NavbarProps {
+  isGallery?: boolean
+}
+
+export function Navbar({ isGallery } : NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollActive, setScrollActive] = useState(false);
 
@@ -21,42 +27,70 @@ export function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const navs = [
-    {
-        label: "Home",
-        href: "home"
-    },
-    {
-        label: "About",
-        href: "about"
-    },
-    {
-        label: "Shows",
-        href: "live"
-    },
-    {
-        label: "Merch",
-        href: "merch"
-    },
-    {
-        label: "Socials",
-        href: "socials"
-    }
-  ]
+  const router = useRouter();
 
-  // Navigation links
+  let navs;
+
+  if(isGallery){
+    navs = [
+      {
+          label: "Home",
+          href: "home"
+      },
+    ]
+  } else {
+    navs = [
+      {
+          label: "Home",
+          href: "home"
+      },
+      {
+          label: "About",
+          href: "about"
+      },
+      {
+          label: "Shows",
+          href: "live"
+      },
+      {
+          label: "Merch",
+          href: "merch"
+      },
+      {
+          label: "Socials",
+          href: "socials"
+      }
+    ]
+  }
+
   const navList = (
-    <ul className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8 text-lg">
-      {navs.map((item, index) => (
-        <a href={`#${item.href}`} key={index} className="">
-        <li onClick={()=> setIsOpen(false)}
-          className="cursor-pointer text-white font-semibold hover:text-gray-500 transition">
-          {item.label}
-        </li>
+  <ul className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8 text-lg">
+    {navs.map((item, index) => {
+      if (item.label === "Home") {
+        return (
+          <Link href="/" key={index}>
+            <li
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
+            >
+              {item.label}
+            </li>
+          </Link>
+        );
+      }
+      return (
+        <a href={`#${item.href}`} key={index}>
+          <li
+            onClick={() => setIsOpen(false)}
+            className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
+          >
+            {item.label}
+          </li>
         </a>
-      ))}
-    </ul>
-  );
+      );
+    })}
+  </ul>
+);
 
   return (
     <header
@@ -82,7 +116,12 @@ export function Navbar() {
         {/* Right: Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navList}
-          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
+          <Link href="/gallery">
+            <button className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
+              Gallery
+            </button>
+          </Link>
+          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank" rel="noreferrer">
             <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
               Subscribe
             </button>
@@ -106,7 +145,15 @@ export function Navbar() {
       >
         <div className="bg-[#0c121d] p-7 border-t-3 border-[#a73b24]">
           {navList}
-          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
+          <Link href="/gallery">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold"
+            >
+              Gallery
+            </button>
+          </Link>
+          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank" rel="noreferrer">
             <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
               Subscribe
             </button>

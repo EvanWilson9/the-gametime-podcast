@@ -2,6 +2,7 @@ import { Mic2, Users, Trophy, Twitter, Instagram, Mail } from "lucide-react";
 import DarrellImage from "../assets/darrell_img.jpg";
 import IsaiahImage from "../assets/isaiah_img.jpg";
 import RamonImage from "../assets/ramon_img.jpg";
+import AFSPBanner from "../assets/afsp_banner.png";
 
 import Image from "next/image";
 import EventShowcase from "./EventShowcase";
@@ -18,13 +19,13 @@ const About = () => {
     '/images/IMG_7041.jpeg[1].jpg',
   ];
 
-  const eventDescription = `The Game Time Network, in partnership with Bigsys, is excited to bring you exclusive in-house live events every couple of months! 🎉
+//   const eventDescription = `The Game Time Network, in partnership with Bigsys, is excited to bring you exclusive in-house live events every couple of months! 🎉
 
-At our first event on April 4th, we gave away Game Time t-shirts, gift cards, and our headline prizes — 3 pairs of Pacers tickets
+// At our first event on April 4th, we gave away Game Time t-shirts, gift cards, and our headline prizes — 3 pairs of Pacers tickets
 
-Missed out? Don't worry our next event is coming up in late June (exact date TBD), and you'll have another chance to win big and be part of the experience.
+// Missed out? Don't worry our next event is coming up in late June (exact date TBD), and you'll have another chance to win big and be part of the experience.
 
-We can't wait to see you there!`;
+// We can't wait to see you there!`;
 
   const hosts = [
     {
@@ -116,26 +117,107 @@ We can't wait to see you there!`;
             </div>
         </div>
         </section>
-        <section id="bigsy" className="w-full">
+        <section id="bigsy" className="w-full pb-10">
           <EventShowcase 
             title="Game Time Network @ Bigsys"
-            description={eventDescription}
             images={eventImages}
           />
         </section>
-        <section className="w-full py-12 px-4">
-          <div className="mt-10 mb-20 max-w-5xl mx-auto">
-            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/EB8VCEYPaSc"
-                title="Game Time Podcast Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen>
-              </iframe>
+        <section className="w-full bg-[#0d1723] py-20 px-4">
+  <div className="max-w-6xl mx-auto">
+
+    {/* Main Card */}
+    <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
+
+      {/* Banner */}
+      <div className="relative w-full">
+        <Image
+          src={AFSPBanner}
+          alt="AFSP Banner"
+          width={1600}
+          height={500}
+          className="w-full h-auto object-cover"
+          priority
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-8 md:p-12 space-y-8">
+
+        <div className="space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0d1723]">
+            American Foundation for Suicide Prevention (AFSP)
+          </h2>
+
+          <div className="w-20 h-1 rounded-full bg-[#be4725]"></div>
+
+          <p className="text-lg leading-relaxed text-gray-700">
+            This organization aims to help spread awareness and support
+            mental health initiatives throughout our community.
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700">
+            If you or someone you care about is struggling, support is
+            available 24/7. Call, text, or chat the 988 Suicide & Crisis
+            Lifeline by dialing 988. You can also connect with the Crisis
+            Text Line by texting HELLO to 741741. You are not alone —
+            help is just a conversation away.
+          </p>
+        </div>
+
+        {/* Links */}
+        <div className="flex flex-col gap-4">
+          <a
+            href="https://afsp.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#be4725] font-semibold hover:underline text-lg"
+          >
+            Visit the AFSP Website
+          </a>
+
+          <a
+            href="https://supporting.afsp.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#be4725] font-semibold hover:underline text-lg"
+          >
+            Learn More About Suicide Prevention
+          </a>
+        </div>
+
+        {/* Donate CTA */}
+        <div className="pt-8 border-t border-gray-200">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+            <div>
+              <h3 className="text-2xl font-bold text-[#0d1723] mb-2">
+                Donate & Support the Cause
+              </h3>
+
+              <p className="text-gray-700 max-w-2xl">
+                Every contribution helps provide education, advocacy,
+                research, and support for individuals and families
+                affected by suicide.
+              </p>
             </div>
+
+            <a
+              href="https://supporting.afsp.org/general-donations/donate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#be4725] hover:bg-[#a73b24] transition-colors text-white font-semibold px-8 py-4 rounded-xl"
+            >
+              Donate Now
+            </a>
+
           </div>
-        </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
         <section className="flex justify-center w-full py-24 px-4 relative overflow-hidden bg-[#0d1723]">
         <div className="max-w-7xl">
           <div className="container mx-auto relative z-10">

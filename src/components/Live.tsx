@@ -63,6 +63,7 @@ const Live = () => {
                 <li>Scott Moore (Head Coach, Grace College)</li>
                 <li>Mark Hester (Head Coach, IU East)</li>
                 <li>Mark Montieth (Indiana Sports Historian & Author)</li>
+                <li>Deandre Brock (Head Coach, Warren Central Men's Basketball)</li>
               </ul>
             </div>
             <h3 className="text-2xl font-bold mb-4">Game Time Sponsors</h3>
