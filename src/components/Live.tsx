@@ -130,7 +130,7 @@ const Live = () => {
 
           <ShowCard
             logo={ZaysWays}
-            title="GameTime: After Hours"
+            title="Zays Ways"
             description="Zays Ways is still the late-night sports recap show you know and love hosted by Isaiah Hoffman hit with a new name airing deep into the night whether it&quot;s midnight or 3 AM and now possible mid day shows aswell The show covers the NBA, NFL, and anything on Isaiah&quot;s mind catchin Isaiah breaking down games, headlines, and sharing his real, unfiltered thoughts because on this show it&quot;s Zays Way or the Highway."
             style={true}
           />
