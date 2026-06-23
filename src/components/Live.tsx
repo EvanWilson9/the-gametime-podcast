@@ -4,7 +4,7 @@ import LiveLogo from '../assets/live-logo.png';
 // import AfterHours from '../assets/after-hours.png';
 // import AfterHoursResized from '../assets/after-hours-resized.png';
 import ZaysWays from '../assets/zaysways.png';
-import CotsCorner from '../assets/cotscorner.png';
+import CotsCorner from '../assets/cots_corner.png';
 import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
