@@ -1,9 +1,10 @@
 import React from 'react';
 import { Calendar, Clock, Cross, Youtube } from 'lucide-react';
 import LiveLogo from '../assets/live-logo.png';
-import AfterHours from '../assets/after-hours.png';
-import AfterHoursResized from '../assets/after-hours-resized.png';
-import CotsCorner from '../assets/cotsCorner.png';
+// import AfterHours from '../assets/after-hours.png';
+// import AfterHoursResized from '../assets/after-hours-resized.png';
+import ZaysWays from '../assets/zaysways.png';
+import CotsCorner from '../assets/cotscorner.png';
 import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
@@ -128,9 +129,9 @@ const Live = () => {
           />
 
           <ShowCard
-            logo={AfterHoursResized}
+            logo={ZaysWays}
             title="GameTime: After Hours"
-            description="Game Time After Hours is a late-night sports recap show hosted by Isaiah Hoffman, airing deep into the night whether it&quot;s midnight or 3 AM The show covers the NBA, NFL, and even NASCAR, with Isaiah breaking down games, headlines, and sharing his real, unfiltered thoughts when the rest of the world is asleep."
+            description="Zays Ways is still the late-night sports recap show you know and love hosted by Isaiah Hoffman hit with a new name airing deep into the night whether it&quot;s midnight or 3 AM and now possible mid day shows aswell The show covers the NBA, NFL, and anything on Isaiah&quot;s mind catchin Isaiah breaking down games, headlines, and sharing his real, unfiltered thoughts because on this show it&quot;s Zays Way or the Highway."
             style={true}
           />
 

@@ -116,7 +116,7 @@ export function Navbar({ isGallery } : NavbarProps) {
         {/* Right: Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navList}
-            <button onClick={()=> router.push("/gallery")} className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
+            <button onClick={()=> router.push("/gallery" as any)} className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
               Gallery
             </button>
           <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
@@ -146,7 +146,7 @@ export function Navbar({ isGallery } : NavbarProps) {
           <button
             onClick={() => {
               setIsOpen(false);
-              router.push("/gallery");
+              router.push("/gallery" as any);
             }}
             className="cursor-pointer bg-white text-black mt-3 w-full px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold"
           >
