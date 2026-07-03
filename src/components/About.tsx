@@ -7,6 +7,8 @@ import AFSPBanner from "../assets/afsp_banner.png";
 import Image from "next/image";
 import EventShowcase from "./EventShowcase";
 
+import LiveEvent from "../assets/live_event.png";
+
 const About = () => {
   const eventImages = [
     '/images/20260404_194201[1].JPG',
@@ -121,6 +123,16 @@ const About = () => {
           <EventShowcase 
             title="Game Time Network @ Bigsys"
             images={eventImages}
+          />
+        </section>
+        <section className="pb-15">
+            <Image
+            src={LiveEvent}
+            alt="Live Event Graphic"
+            width={500}
+            height={800}
+            className=""
+            priority
           />
         </section>
         <section className="w-full bg-[#0d1723] py-20 px-4">
