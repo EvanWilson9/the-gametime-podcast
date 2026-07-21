@@ -1,5 +1,6 @@
 import { Mic2, Users, Trophy, Twitter, Instagram, Mail } from "lucide-react";
 import DarrellImage from "../assets/darrell_img.jpg";
+import DarrellImage2 from  '../assets/darrellpfp.jpg';
 import IsaiahImage from "../assets/isaiah_img.jpg";
 import RamonImage from "../assets/ramon_img.jpg";
 import AFSPBanner from "../assets/afsp_banner.png";
@@ -32,7 +33,7 @@ const About = () => {
   const hosts = [
     {
       name: "Darrell Cothern Sr.",
-      image: DarrellImage,
+      image: DarrellImage2,
       role: "Co-Host",
       bio: "Darrell Cothern Sr., a Warren Central grad, U.S. Army veteran, and lifelong Eastsider. From pickup games at local courts to coaching AAU, he enjoys breaking down the biggest matchups. He's a huge NFL fan, a longtime Pacers fan, and loves the Indiana Hoosiers, along with the Alabama Crimson Tide. Always keeping it real with that Eastside energy.",
       socials: {

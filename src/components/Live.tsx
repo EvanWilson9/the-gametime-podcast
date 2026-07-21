@@ -5,6 +5,7 @@ import LiveLogo from '../assets/live-logo.png';
 // import AfterHoursResized from '../assets/after-hours-resized.png';
 import ZaysWays from '../assets/zaysways.png';
 import CotsCorner from '../assets/cots_corner.png';
+import CotsCorner2 from '../assets/cotscorner2.png';
 import BiasWithLittleTruth from '../assets/biasWithALittleTruthIMG.png'
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
@@ -136,7 +137,7 @@ const Live = () => {
           />
 
           <ShowCard
-            logo={CotsCorner}
+            logo={CotsCorner2}
             title="Cot's Corner"
             description="Darrell Sr., better known as DCot brings his unfiltered energy and passion to Cot&quot;s Corner, where no topic is off limits. From the NFL and NBA to college football and everything in between, DCot breaks down the biggest stories in sports the way fans actually talk about them — real opinions, bold takes, and nonstop personality."
             subHeader='Facts Over Feelings'
