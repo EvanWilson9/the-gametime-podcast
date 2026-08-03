@@ -1,6 +1,8 @@
 'use client';
 import Image from "next/image";
 import Logo from "../assets/gametime-logo.png";
+import NewLogo from "../assets/newlogo.png";
+
 import { useEffect, useState } from "react";
 import Link from 'next/link'
 import { useRouter } from "next/navigation";
@@ -102,7 +104,7 @@ export function Navbar({ isGallery } : NavbarProps) {
         {/* Left: Logo + Title */}
         <div className="flex items-center gap-3">
           <Image
-            src={Logo}
+            src={NewLogo}
             width={45}
             height={45}
             alt="Logo"

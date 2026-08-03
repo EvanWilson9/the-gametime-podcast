@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GameTime Network",
+  title: "Game Time Network",
   description: "NFL and Basketball Sports Podcast.",
 };
 

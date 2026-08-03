@@ -1,5 +1,6 @@
 import HeroButton from "./ui/HeroButton";
 import heroBg from "../assets/hero-background.png";
+import newHeroBackground from "../assets/newHeroBackground.png";
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
         <div className="max-w-7xl">
       <div className="absolute inset-0 z-0">
         <img
-          src={heroBg.src || '/assets/hero-background.webp'}
+          src={newHeroBackground.src || '/assets/newHeroBackground.png'}
           alt="Sports background"
           className="w-full h-full object-fit absolute inset-0"
           style={{ zIndex: 0 }}

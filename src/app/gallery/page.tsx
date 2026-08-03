@@ -11,6 +11,11 @@ const galleryImages = [
     '/images/IMG_0202[1].JPG',
     '/images/IMG_0204[1].JPG',
     '/images/IMG_7041.jpeg[1].jpg',
+    '/images/gallery1.jpg',
+    '/images/gallery2.jpg',
+    '/images/gallery3.jpg',
+    '/images/gallery4.jpg',
+    '/images/gallery5.jpg'
 ];
 
 export default function GalleryPage() {
@@ -28,7 +33,7 @@ export default function GalleryPage() {
         <div className="mx-auto mt-4 w-20 h-1 rounded-full bg-[#be4725]"></div>
 
         <p className="text-white/70 text-lg mt-6 max-w-2xl mx-auto">
-          Photos from Game Time Network events, podcasts,
+          Photos from Game Time Network events,
           live shows, and community moments.
         </p>
       </div>
