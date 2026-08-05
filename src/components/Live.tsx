@@ -94,7 +94,7 @@ const Live = () => {
               </ul>
             </div>
             <h3 className="text-2xl font-bold mb-4 text-white">Game Time Sponsors</h3>
-            <div className="text-white/80 italic">
+            {/* <div className="text-white/80 italic">
               Presented by Mack Gadis, your trusted{" "}
               <a
                 href="https://www.statefarm.com/"
@@ -105,7 +105,7 @@ const Live = () => {
               </a>{" "}
               Agent. <br />
               (317-894-3865)
-            </div>
+            </div> */}
             <div className="text-white/80 italic">
               Jason Hancock with{" "}
               <a
