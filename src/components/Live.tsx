@@ -129,12 +129,44 @@ const Live = () => {
               </a>
               <br />
               (463-202-2970)
+              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                {[1, 2, 3].map((imageNumber) => (
+                  <div
+                    key={imageNumber}
+                    className="relative aspect-4/3 overflow-hidden rounded-lg border border-white/10 bg-white/5"
+                  >
+                    <Image
+                      src={`/images/sponsorImages/bigsys-img${imageNumber}.jpg`}
+                      alt={`Bigsy's Sports Grill sponsor image ${imageNumber}`}
+                      fill
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="text-white/80 italic">
               {" "}
               Hamilton Mechanical Services <br />
               (317 612-1979)
+              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                {[1, 2, 3].map((imageNumber) => (
+                  <div
+                    key={imageNumber}
+                    className="relative aspect-4/3 overflow-hidden rounded-lg border border-white/10 bg-white/5"
+                  >
+                    <Image
+                      src={`/images/sponsorImages/hamilton-img${imageNumber}.jpg`}
+                      alt={`Hamilton Mechanical Services sponsor image ${imageNumber}`}
+                      fill
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
