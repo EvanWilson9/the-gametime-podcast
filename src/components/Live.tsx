@@ -74,7 +74,7 @@ const Live = () => {
           <div className="space-y-8 rounded-3xl border border-white/10 bg-black/35 p-6 md:p-8 shadow-2xl shadow-black/20 backdrop-blur-sm">
             <p className="text-lg leading-relaxed text-white/90">
               Game Time Live is the Flagship show of the Game Time Network and
-              is live now every Saturday from 12-1PM and is hosted by Isaiah
+              is live now every Saturday from 11AM-12PM and is hosted by Isaiah
               Hoffman,Darrell Sr and Ramon Stallings Sr as they cover everything
               in the sports world.
             </p>
