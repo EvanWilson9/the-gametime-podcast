@@ -188,7 +188,7 @@ const Live = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-6 h-6 text-[#be4725] shrink-0" />
-                <span>12:00 - 1:00 PM EST</span>
+                <span>11:00AM - 12:00PM EST</span>
               </div>
               <div className="flex items-center gap-3">
                 <Youtube className="w-6 h-6 text-[#be4725] shrink-0" />
