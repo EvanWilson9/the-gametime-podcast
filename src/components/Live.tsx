@@ -72,7 +72,7 @@ const Live = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column - Show Info */}
-          <div className="space-y-8 rounded-3xl border border-white/10 bg-black/35 p-6 md:p-8 shadow-2xl shadow-black/20 backdrop-blur-sm">
+          <div className="min-w-0 space-y-8 rounded-3xl border border-white/10 bg-black/35 p-6 md:p-8 shadow-2xl shadow-black/20 backdrop-blur-sm">
             <p className="text-lg leading-relaxed text-white/90">
               Game Time Live is the Flagship show of the Game Time Network and
               is live now every Saturday from 11AM-12PM and is hosted by Isaiah
@@ -111,7 +111,7 @@ const Live = () => {
               Bigsy's Sports Grill -
               <a
                 href="https://www.google.com/maps/dir//7802+Brookville+Rd,+Indianapolis,+IN+46239/@40.2128896,-85.4065152,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x886b4f5faa3b60fb:0xfbb50e63d1a32bf6!2m2!1d-86.030092!2d39.751396?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D"
-                className="underline text-[#f4b39d]"
+                className="break-words underline text-[#f4b39d]"
                 target="_blank"
               >
                 7802 Brookville Road, Indinapolis, Indiana
@@ -174,20 +174,25 @@ const Live = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="K&D Design Co."
-              className="inline-block"
+              className="flex w-full min-w-0 flex-col items-center gap-4 text-center sm:flex-row sm:items-center sm:text-left"
             >
               <Image
                 src={KDLogo}
                 width={180}
                 height={180}
                 alt="K&D Design Co."
-                className="object-contain"
+                className="h-auto max-w-full shrink-0 object-contain"
               />
+              <div className="min-w-0 break-words text-white/80">
+                <h3 className="text-xl font-bold text-white">K &amp; D Design Co.</h3>
+                <p>Custom Apparel · Made For You · Sports · Birthdays · Event</p>
+                <p>Exclusive Printer For all game time network gear.</p>
+              </div>
             </a>
           </div>
 
           {/* Right Column - Watch Info */}
-          <div className="flex flex-col rounded-3xl border border-white/10 bg-[#0c121d]/75 p-6 md:p-8 shadow-2xl shadow-black/30 backdrop-blur-sm min-h-[420px]">
+          <div className="flex min-w-0 flex-col rounded-3xl border border-white/10 bg-[#0c121d]/75 p-6 md:p-8 shadow-2xl shadow-black/30 min-h-[420px]">
             <div className="flex flex-col gap-5">
               <h3 className="text-2xl font-bold text-white">Watch Live on Saturdays</h3>
               <p className="text-lg leading-relaxed text-white/80">
