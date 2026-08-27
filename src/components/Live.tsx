@@ -184,7 +184,7 @@ const Live = () => {
                 className="h-auto max-w-full shrink-0 object-contain"
               />
               <div className="min-w-0 break-words text-white/80">
-                <h3 className="text-xl font-bold text-white">K &amp; D Design Co.</h3>
+                <h3 className="text-xl font-bold text-white underline">K &amp; D Design Co.</h3>
                 <p>Custom Apparel · Made For You · Sports · Birthdays · Event</p>
                 <p>Exclusive printer For all game time network gear.</p>
               </div>
