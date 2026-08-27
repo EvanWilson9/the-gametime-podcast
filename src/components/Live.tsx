@@ -3,6 +3,7 @@ import { Calendar, Clock, Cross, Youtube } from "lucide-react";
 import LiveLogo from "../assets/live-logo.png";
 import GameTimeLiveBackground from "../assets/GameTimeLiveBackground.png";
 import GameTimeLiveLogoNew from "../assets/GameTimeLiveNew.png";
+import KDLogo from "../assets/K_D_logo.png";
 // import AfterHours from '../assets/after-hours.png';
 // import AfterHoursResized from '../assets/after-hours-resized.png';
 import ZaysWays from "../assets/zaysways.png";
@@ -107,18 +108,6 @@ const Live = () => {
               (317-894-3865)
             </div> */}
             <div className="text-white/80 italic">
-              Jason Hancock with{" "}
-              <a
-                href="https://wiredtothenines.com/"
-                className="underline text-[#f4b39d]"
-                target="_blank"
-              >
-                Wired to the Nines
-              </a>
-              <br />
-              (wiredtothenines@yahoo.com)
-            </div>
-            <div className="text-white/80 italic">
               Bigsy's Sports Grill -
               <a
                 href="https://www.google.com/maps/dir//7802+Brookville+Rd,+Indianapolis,+IN+46239/@40.2128896,-85.4065152,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x886b4f5faa3b60fb:0xfbb50e63d1a32bf6!2m2!1d-86.030092!2d39.751396?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -168,6 +157,33 @@ const Live = () => {
                 ))}
               </div>
             </div>
+            <div className="text-white/80 italic">
+              Jason Hancock with{" "}
+              <a
+                href="https://wiredtothenines.com/"
+                className="underline text-[#f4b39d]"
+                target="_blank"
+              >
+                Wired to the Nines
+              </a>
+              <br />
+              (wiredtothenines@yahoo.com)
+            </div>
+            <a
+              href="https://beacons.ai/kandddesignco"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="K&D Design Co."
+              className="inline-block"
+            >
+              <Image
+                src={KDLogo}
+                width={180}
+                height={180}
+                alt="K&D Design Co."
+                className="object-contain"
+              />
+            </a>
           </div>
 
           {/* Right Column - Watch Info */}
