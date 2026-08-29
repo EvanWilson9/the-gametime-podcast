@@ -17,7 +17,8 @@ import BiasWithLittleTruth from "../assets/biasWithALittleTruthIMG.png";
 // import FollowingThePack from '../assets/following-the-pack.png';
 // import CrossTime from '../assets/cross-time.jpg';
 // import CrossTime from '../assets/cross-time-basketball.jpg';
-import CrossTimeNew from '../assets/CrossTimeNew.png';
+import CrossTimeNew from "../assets/CrossTimeNew.png";
+import BlueTvSponsor from "../assets/blueTv_sponsor.jpg";
 
 import SideBySide from "../assets/side-by-side.png";
 
@@ -81,7 +82,9 @@ const Live = () => {
             </p>
 
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold mb-4 text-white">Featured Guests</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">
+                Featured Guests
+              </h3>
               <ul className="list-disc list-inside space-y-2 text-white/80">
                 <li>Mark Boyle (Voice of the Indiana Pacers)</li>
                 <li>Matt Taylor (Voice of the Indianapolis Colts)</li>
@@ -94,7 +97,9 @@ const Live = () => {
                 </li>
               </ul>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Game Time Sponsors</h3>
+            <h3 className="text-2xl font-bold mb-4 text-white">
+              Game Time Sponsors
+            </h3>
             {/* <div className="text-white/80 italic">
               Presented by Mack Gadis, your trusted{" "}
               <a
@@ -111,7 +116,7 @@ const Live = () => {
               Bigsy's Sports Grill -
               <a
                 href="https://www.google.com/maps/dir//7802+Brookville+Rd,+Indianapolis,+IN+46239/@40.2128896,-85.4065152,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x886b4f5faa3b60fb:0xfbb50e63d1a32bf6!2m2!1d-86.030092!2d39.751396?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D"
-                className="break-words underline text-[#f4b39d]"
+                className="wrap-break-word underline text-[#f4b39d]"
                 target="_blank"
               >
                 7802 Brookville Road, Indinapolis, Indiana
@@ -174,27 +179,44 @@ const Live = () => {
               target="_blank"
               rel="noreferrer"
               aria-label="K&D Design Co."
-              className="flex w-full min-w-0 flex-col items-center gap-4 text-center sm:flex-row sm:items-center sm:text-left"
+              className="flex w-full min-w-0 flex-col items-center gap-2 text-center sm:flex-row sm:items-center sm:gap-3 sm:text-left"
             >
               <Image
                 src={KDLogo}
                 width={180}
                 height={180}
                 alt="K&D Design Co."
-                className="h-auto max-w-full shrink-0 object-contain"
+                className="h-auto w-12 max-w-full shrink-0 object-contain sm:w-14"
               />
-              <div className="min-w-0 break-words text-white/80">
-                <h3 className="text-xl font-bold text-white underline">K &amp; D Design Co.</h3>
-                <p>Custom Apparel · Made For You · Sports · Birthdays · Event</p>
-                <p>Exclusive printer For all game time network gear.</p>
+              <div className="min-w-0 wrap-break-word text-[11px] leading-tight text-white/80 sm:text-xs">
+                <h3 className="text-sm font-bold text-white underline">
+                  K &amp; D Design Co.
+                </h3>
+                <p className="wrap-break-word">
+                  Custom Apparel · Made For You · Sports · Birthdays · Event
+                </p>
+                <p className="wrap-break-word">
+                  Exclusive printer For all game time network gear.
+                </p>
               </div>
             </a>
+            <div className="w-full">
+              <Image
+                src={BlueTvSponsor}
+                alt="Blue TV sponsor"
+                width={1000}
+                height={300}
+                className="mx-auto h-auto w-full max-w-40 rounded-lg object-contain sm:max-w-45"
+              />
+            </div>
           </div>
 
           {/* Right Column - Watch Info */}
           <div className="flex min-w-0 flex-col rounded-3xl border border-white/10 bg-[#0c121d]/75 p-6 md:p-8 shadow-2xl shadow-black/30 min-h-[420px]">
             <div className="flex flex-col gap-5">
-              <h3 className="text-2xl font-bold text-white">Watch Live on Saturdays</h3>
+              <h3 className="text-2xl font-bold text-white">
+                Watch Live on Saturdays
+              </h3>
               <p className="text-lg leading-relaxed text-white/80">
                 From bold debates to exclusive interviews, Game Time Live brings
                 the passion and perspective of real sports fans straight to your
@@ -258,7 +280,6 @@ const Live = () => {
             description="Zays Ways is hosted by Isaiah Hoffman, where if he has something on his mind your gonna hear about it, whether it’s the middle of the day or late at night. You never know when a Zays Ways episode might drop, but always remember it’s Zays Way or the highway."
             style={true}
           />
-
 
           <ShowCard
             logo={CrossTimeNew}
