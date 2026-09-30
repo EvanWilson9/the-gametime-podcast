@@ -20,11 +20,14 @@ const About = () => {
     "/images/IMG_0202[1].JPG",
     "/images/IMG_0204[1].JPG",
     "/images/IMG_7041.jpeg[1].jpg",
-    '/images/gallery1.jpg',
-    '/images/gallery2.jpg',
-    '/images/gallery3.jpg',
-    '/images/gallery4.jpg',
-    '/images/gallery5.jpg'
+    "/images/gallery1.jpg",
+    "/images/gallery2.jpg",
+    "/images/gallery3.jpg",
+    "/images/gallery4.jpg",
+    "/images/gallery5.jpg",
+    "/images/25807.jpg",
+    "/images/25808.jpg",
+    "/images/25809.jpg",
   ];
 
   //   const eventDescription = `The Game Time Network, in partnership with Bigsys, is excited to bring you exclusive in-house live events every couple of months! 🎉

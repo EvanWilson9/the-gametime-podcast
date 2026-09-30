@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface EventShowcaseProps {
   title?: string;
@@ -10,7 +10,11 @@ interface EventShowcaseProps {
   images: string[];
 }
 
-const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, images }) => {
+const EventShowcase: React.FC<EventShowcaseProps> = ({
+  title,
+  description,
+  images,
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
@@ -26,7 +30,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, image
 
   const goToPrevious = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
     setIsAutoPlay(false);
   };
@@ -63,7 +67,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, image
               src={images[currentImageIndex]}
               alt={`Event photo ${currentImageIndex + 1}`}
               fill
-              className="object-cover transition-opacity duration-500"
+              className="object-contain transition-opacity duration-500"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               priority
             />
@@ -96,7 +100,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, image
             onClick={() => setIsAutoPlay(!isAutoPlay)}
             className="absolute bottom-4 left-4 z-10 bg-black/70 hover:bg-black/90 text-white px-4 py-2 rounded-full text-sm font-medium transition-all"
           >
-            {isAutoPlay ? '⏸ Pause' : '▶ Play'}
+            {isAutoPlay ? "⏸ Pause" : "▶ Play"}
           </button>
         </div>
 
@@ -106,10 +110,10 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, image
             <button
               key={index}
               onClick={() => goToImage(index)}
-              className={`flex-shrink-0 relative w-20 h-20 rounded-lg overflow-hidden transition-all ${
+              className={`flex-shrink-0 relative w-20 h-20 rounded-lg overflow-hidden bg-black transition-all ${
                 currentImageIndex === index
-                  ? 'ring-2 ring-[#be4725] scale-105'
-                  : 'opacity-60 hover:opacity-100'
+                  ? "ring-2 ring-[#be4725] scale-105"
+                  : "opacity-60 hover:opacity-100"
               }`}
               aria-label={`Go to image ${index + 1}`}
             >
@@ -117,7 +121,7 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({ title, description, image
                 src={image}
                 alt={`Thumbnail ${index + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="80px"
               />
             </button>
