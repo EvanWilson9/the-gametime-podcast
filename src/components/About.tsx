@@ -28,6 +28,7 @@ const About = () => {
     "/images/25807.jpg",
     "/images/25808.jpg",
     "/images/25809.jpg",
+    "/images/healthcare-img.jpg",
   ];
 
   //   const eventDescription = `The Game Time Network, in partnership with Bigsys, is excited to bring you exclusive in-house live events every couple of months! 🎉
@@ -243,6 +244,29 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="w-full bg-[#0d1723] px-4 pb-20">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-2xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1723] mb-6">
+            Autism Signs &amp; Symptoms
+          </h2>
+          <Image
+            src="/images/autism-signs-img.webp"
+            alt="Infographic describing common autism signs and symptoms"
+            width={1024}
+            height={1536}
+            className="w-full max-w-2xl h-auto mx-auto rounded-lg"
+            sizes="(max-width: 768px) 100vw, 672px"
+          />
+          <a
+            href="https://centriahealthcare.com/locations/indiana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-6 text-[#be4725] font-semibold hover:underline text-lg"
+          >
+            Visit Centria Healthcare in Indiana
+          </a>
         </div>
       </section>
       <section className="flex justify-center w-full py-24 px-4 relative overflow-hidden bg-[#0d1723]">

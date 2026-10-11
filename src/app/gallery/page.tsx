@@ -19,6 +19,7 @@ const galleryImages = [
   "/images/25807.jpg",
   "/images/25808.jpg",
   "/images/25809.jpg",
+  "/images/healthcare-img.jpg",
 ];
 
 export default function GalleryPage() {
