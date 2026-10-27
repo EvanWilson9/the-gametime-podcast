@@ -163,6 +163,39 @@ const Live = () => {
               </div>
             </div>
             <div className="text-white/80 italic">
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/images/sponsorImages/esscents-logo.jpg"
+                  alt="Esscents By Ebony logo"
+                  width={330}
+                  height={250}
+                  className="h-12 w-16 rounded object-contain"
+                />
+                <h3 className="text-lg font-bold text-white">
+                  Esscents By Ebony
+                </h3>
+              </div>
+              <a
+                href="mailto:esscentsbyebony@gmail.com"
+                className="wrap-break-word underline text-[#f4b39d]"
+              >
+                esscentsbyebony@gmail.com
+              </a>
+              <div className="mt-4 grid grid-cols-1 gap-3">
+                {[1, 2].map((imageNumber) => (
+                  <Image
+                    key={imageNumber}
+                    src={`/images/sponsorImages/esscents${imageNumber}.jpg`}
+                    alt={`Esscents By Ebony sponsor image ${imageNumber}`}
+                    width={1080}
+                    height={imageNumber === 1 ? 1621 : 1351}
+                    sizes="(min-width: 1024px) 460px, 100vw"
+                    className="mx-auto h-auto w-[80%] rounded-lg object-contain"
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="text-white/80 italic">
               Jason Hancock with{" "}
               <a
                 href="https://wiredtothenines.com/"
