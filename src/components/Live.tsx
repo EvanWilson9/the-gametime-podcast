@@ -251,7 +251,7 @@ const Live = () => {
           <div className="flex min-w-0 flex-col rounded-3xl border border-white/10 bg-[#0c121d]/75 p-6 md:p-8 shadow-2xl shadow-black/30 min-h-[420px]">
             <div className="flex flex-col gap-5">
               <h3 className="text-2xl font-bold text-white">
-                Watch Live on Saturdays
+                Watch Live on Tuesdays
               </h3>
               <p className="text-lg leading-relaxed text-white/80">
                 From bold debates to exclusive interviews, Game Time Live brings
@@ -263,11 +263,11 @@ const Live = () => {
             <div className="mt-8 space-y-4 text-white/80">
               <div className="flex items-center gap-3">
                 <Calendar className="w-6 h-6 text-[#be4725] shrink-0" />
-                <span>Saturdays</span>
+                <span>Tuesdays</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-6 h-6 text-[#be4725] shrink-0" />
-                <span>11:00AM - 12:00PM EST</span>
+                <span>6:00PM - 7:00PM EST</span>
               </div>
               <div className="flex items-center gap-3">
                 <Youtube className="w-6 h-6 text-[#be4725] shrink-0" />
