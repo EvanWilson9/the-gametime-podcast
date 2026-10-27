@@ -181,6 +181,9 @@ const Live = () => {
               >
                 esscentsbyebony@gmail.com
               </a>
+              <p className="mt-1 text-sm not-italic">
+                Find Esscents By Ebony on Facebook, Instagram, and TikTok.
+              </p>
               <div className="mt-4 grid grid-cols-1 gap-3">
                 {[1, 2].map((imageNumber) => (
                   <Image
