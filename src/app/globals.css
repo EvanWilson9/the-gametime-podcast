@@ -1,5 +1,58 @@
 @import "tailwindcss";
 
-*{
+/* Brand palette (unchanged from the original site) */
+@theme {
+  --color-brand: #be4725;
+  --color-brand-dark: #a73b24;
+  --color-brand-tint: #f4b39d;
+  --color-navy: #0d1723;
+  --color-ink: #0c121d;
+  --color-paper: #f6f4f1;
+
+  /* Tokens the original markup referenced but never defined */
+  --color-primary: #be4725;
+  --color-accent: #be4725;
+  --color-background: #ffffff;
+  --color-card: #ffffff;
+  --color-muted-foreground: #5b6575;
+}
+
+html {
   scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+body {
+  background: #fff;
+  color: #0d1723;
+}
+
+/* Muted text reads correctly on dark sections */
+.on-dark {
+  --color-muted-foreground: rgb(255 255 255 / 0.72);
+  color: #fff;
+}
+
+.font-display {
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid #be4725;
+  outline-offset: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadeIn { animation: fadeIn 0.7s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-fadeIn { animation: none; }
 }

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import SectionHeader from "./ui/SectionHeader";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface EventShowcaseProps {
@@ -46,21 +47,16 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({
   };
 
   return (
-    <section className="w-full py-12 px-4 bg-gradient-to-b from-transparent to-accent/5">
+    <section id="events" className="w-full bg-white py-24 px-4">
       <div className="max-w-5xl mx-auto">
-        {/* Title and Description */}
-        <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="text-[#be4725]">{title}</span>
-          </h2>
-          <div className="mx-auto w-16 h-1 bg-linear-to-r from-[#be4725] via-[#a73b24] to-[#0d1723] rounded-full"></div>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto whitespace-pre-line">
-            {description}
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow="Live Events"
+          title={title ?? ""}
+          description={description}
+        />
 
         {/* Slideshow Container */}
-        <div className="relative w-full rounded-lg overflow-hidden shadow-xl group">
+        <div className="relative w-full rounded-lg overflow-hidden group">
           {/* Main Image */}
           <div className="relative w-full aspect-video overflow-hidden bg-black">
             <Image
@@ -69,14 +65,13 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({
               fill
               className="object-contain transition-opacity duration-500"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-              priority
             />
           </div>
 
           {/* Navigation Arrows */}
           <button
             onClick={goToPrevious}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 transition-all opacity-0 group-hover:opacity-100 rounded-r"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 focus-visible:opacity-100 rounded-r"
             aria-label="Previous image"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -84,23 +79,23 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({
 
           <button
             onClick={goToNext}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 transition-all opacity-0 group-hover:opacity-100 rounded-l"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 focus-visible:opacity-100 rounded-l"
             aria-label="Next image"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
 
           {/* Image Counter */}
-          <div className="absolute top-4 right-4 z-10 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+          <div className="absolute top-4 right-4 z-10 bg-black/70 text-white px-3 py-1 rounded-md text-sm font-medium">
             {currentImageIndex + 1} / {images.length}
           </div>
 
           {/* Play/Pause indicator */}
           <button
             onClick={() => setIsAutoPlay(!isAutoPlay)}
-            className="absolute bottom-4 left-4 z-10 bg-black/70 hover:bg-black/90 text-white px-4 py-2 rounded-full text-sm font-medium transition-all"
+            className="absolute bottom-4 left-4 z-10 bg-black/70 hover:bg-black/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-all"
           >
-            {isAutoPlay ? "⏸ Pause" : "▶ Play"}
+            {isAutoPlay ? "Pause" : "Play"}
           </button>
         </div>
 
@@ -110,9 +105,9 @@ const EventShowcase: React.FC<EventShowcaseProps> = ({
             <button
               key={index}
               onClick={() => goToImage(index)}
-              className={`flex-shrink-0 relative w-20 h-20 rounded-lg overflow-hidden bg-black transition-all ${
+              className={`shrink-0 relative w-20 h-20 rounded-lg overflow-hidden bg-black transition-all ${
                 currentImageIndex === index
-                  ? "ring-2 ring-[#be4725] scale-105"
+                  ? "ring-2 ring-brand"
                   : "opacity-60 hover:opacity-100"
               }`}
               aria-label={`Go to image ${index + 1}`}

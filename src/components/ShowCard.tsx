@@ -5,7 +5,7 @@ interface ShowCardProps {
   logo: StaticImageData;
   title: string;
   description: string;
-  subHeader?: string; // <-- new optional prop
+  subHeader?: string;
   reverse?: boolean;
   style?: boolean;
 }
@@ -16,57 +16,36 @@ const ShowCard = ({
   description,
   subHeader,
   reverse = false,
-  style
+  style,
 }: ShowCardProps) => {
   return (
-    <div
-      className={`flex flex-col ${
-        reverse ? "lg:flex-row" : "lg:flex-row-reverse"
-      } lg:items-center gap-8 w-full`}
+    <article
+      className={`flex flex-col items-center gap-8 py-12 first:pt-0 last:pb-0 lg:items-center lg:gap-12 ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      }`}
     >
-      {/* Logo + desktop text */}
-      <div className="flex flex-col items-center lg:flex-row gap-6 lg:gap-8 w-full lg:w-auto">
-        <div className="shrink-0 overflow-hidden rounded-lg">
-          <Image
-            src={logo}
-            width={220}
-            height={220}
-            alt="Show logo"
-            className={`w-64 h-64 lg:w-72 lg:h-72 object-fit ${style && 'object-right'} transition-all`}
-          />
-        </div>
-
-        {/* Desktop Text */}
-        <div className="hidden lg:flex flex-col gap-2 flex-1 justify-center">
-          <h3 className="text-2xl md:text-3xl font-bold">{title}</h3>
-
-          {subHeader && (
-            <p className="text-base italic text-muted-foreground opacity-90">
-              {subHeader}
-            </p>
-          )}
-
-          <p className="text-lg leading-relaxed text-muted-foreground mt-1">
-            {description}
-          </p>
-        </div>
+      <div className="shrink-0 overflow-hidden rounded-lg">
+        <Image
+          src={logo}
+          width={288}
+          height={288}
+          alt={`${title} logo`}
+          className={`h-56 w-56 object-cover sm:h-64 sm:w-64 lg:h-72 lg:w-72 ${
+            style ? "object-right" : ""
+          }`}
+        />
       </div>
 
-      {/* Mobile Text */}
-      <div className="flex lg:hidden flex-col items-center gap-2 w-full text-center">
-        <h3 className="text-2xl md:text-3xl font-bold">{title}</h3>
-
+      <div className="flex-1 text-center lg:text-left">
+        <h3 className="font-display text-3xl font-bold uppercase md:text-4xl">{title}</h3>
         {subHeader && (
-          <p className="text-base italic text-muted-foreground opacity-90">
+          <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-brand-tint">
             {subHeader}
           </p>
         )}
-
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          {description}
-        </p>
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 
