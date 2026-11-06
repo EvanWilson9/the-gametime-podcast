@@ -1,163 +1,127 @@
 'use client';
 import Image from "next/image";
-import Logo from "../assets/gametime-logo.png";
+import Link from "next/link";
+import type { Route } from "next";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 import NewLogo from "../assets/newlogo.png";
 
-import { useEffect, useState } from "react";
-import Link from 'next/link'
-import { useRouter } from "next/navigation";
-
 interface NavbarProps {
-  isGallery?: boolean
+  isGallery?: boolean;
 }
 
-export function Navbar({ isGallery } : NavbarProps) {
+const YOUTUBE = "https://www.youtube.com/@Game_Time_Network";
+
+const homeLinks = [
+  { label: "About", href: "/#about" },
+  { label: "Hosts", href: "/#hosts" },
+  { label: "Shows", href: "/#live" },
+  { label: "Community", href: "/#community" },
+  { label: "Merch", href: "/#merch" },
+];
+
+export function Navbar({ isGallery }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollActive, setScrollActive] = useState(false);
 
-  // Add scroll shadow effect
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollActive(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setScrollActive(window.scrollY > 10);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Toggle mobile menu
-  const handleOpenNav = () => {
-    setIsOpen(!isOpen);
-  };
+  const links = isGallery
+    ? [{ label: "Home", href: "/" }]
+    : homeLinks;
 
-  const router = useRouter();
+  const linkClass =
+    "text-[15px] font-medium text-white/85 hover:text-white transition-colors";
 
-  let navs;
-
-  if(isGallery){
-    navs = [
-      {
-          label: "Home",
-          href: "home"
-      },
-    ]
-  } else {
-    navs = [
-      {
-          label: "Home",
-          href: "home"
-      },
-      {
-          label: "About",
-          href: "about"
-      },
-      {
-          label: "Shows",
-          href: "live"
-      },
-      {
-          label: "Merch",
-          href: "merch"
-      },
-      {
-          label: "Socials",
-          href: "socials"
-      }
-    ]
-  }
-
-  const navList = (
-  <ul className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8 text-lg">
-    {navs.map((item, index) => {
-      if (item.label === "Home") {
-        return (
-          <Link href="/" key={index}>
-            <li
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
-            >
-              {item.label}
-            </li>
-          </Link>
-        );
-      }
-      return (
-        <a href={`#${item.href}`} key={index}>
-          <li
-            onClick={() => setIsOpen(false)}
-            className="cursor-pointer text-white font-semibold hover:text-gray-500 transition"
-          >
-            {item.label}
-          </li>
-        </a>
-      );
-    })}
-  </ul>
-);
+  const solid = scrollActive || isOpen || isGallery;
 
   return (
     <header
-      className={`fixed top-0 w-full z-30 transition-all duration-300 ${
-        scrollActive ? "shadow-md py-2 bg-[#0c121d]" : "py-4"
+      className={`fixed top-0 z-30 w-full transition-all duration-300 ${
+        solid ? "bg-ink/95 shadow-lg shadow-black/20 py-2" : "py-4"
       }`}
     >
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10">
-        {/* Left: Logo + Title */}
-        <div className="flex items-center gap-3">
-          <Image
-            src={NewLogo}
-            width={45}
-            height={45}
-            alt="Logo"
-            className="rounded-md"
-          />
-          <div className="font-bold text-2xl text-white">
+      <nav
+        aria-label="Main"
+        className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10"
+      >
+        <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+          <Image src={NewLogo} width={42} height={42} alt="" className="rounded-md" />
+          <span className="font-display text-2xl font-bold uppercase tracking-wide text-white">
             Game Time Network
-          </div>
-        </div>
+          </span>
+        </Link>
 
-        {/* Right: Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
-          {navList}
-            <button onClick={()=> router.push("/gallery" as any)} className="cursor-pointer bg-white text-black px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold">
-              Gallery
-            </button>
-          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank">
-            <button className="cursor-pointer bg-[#be4725] text-white px-4 py-2 rounded-[9px] hover:bg-[#a73b24] transition-all duration-200 font-semibold">
-              Subscribe
-            </button>
+        <div className="hidden items-center gap-8 lg:flex">
+          <ul className="flex items-center gap-8">
+            {links.map((item) => (
+              <li key={item.label}>
+                <Link href={item.href as Route} className={linkClass}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            {!isGallery && (
+              <li>
+                <Link href="/gallery" className={linkClass}>
+                  Gallery
+                </Link>
+              </li>
+            )}
+          </ul>
+          <a
+            href={YOUTUBE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-brand px-5 py-2 text-[15px] font-semibold text-white transition-colors hover:bg-brand-dark"
+          >
+            Subscribe
           </a>
         </div>
 
-        {/* Right: Mobile Button */}
         <button
-          onClick={handleOpenNav}
-          className="lg:hidden p-2 rounded-md text-white text-2xl transition"
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-2 text-white lg:hidden"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
         >
-          {isOpen ? "✕" : "☰"}
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </nav>
 
-      {/* Mobile Dropdown */}
       <div
-        className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h opacity-100 mt-2" : "max-h-0 opacity-0"
+        className={`overflow-hidden transition-all duration-300 lg:hidden ${
+          isOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-[#0c121d] p-7 border-t-3 border-[#a73b24]">
-          {navList}
-          <button
-            onClick={() => {
-              setIsOpen(false);
-              router.push("/gallery" as any);
-            }}
-            className="cursor-pointer bg-white text-black mt-3 w-full px-4 py-2 rounded-[9px] hover:bg-[#be4725] hover:text-white transition-all duration-200 font-semibold"
+        <div className="border-t-2 border-brand px-6 pb-6 pt-4">
+          <ul className="flex flex-col">
+            {[...links, ...(isGallery ? [] : [{ label: "Gallery", href: "/gallery" }])].map(
+              (item) => (
+                <li key={item.label} className="border-b border-white/10">
+                  <Link
+                    href={item.href as Route}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-3 text-lg font-medium text-white"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ),
+            )}
+          </ul>
+          <a
+            href={YOUTUBE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 block rounded-md bg-brand py-3 text-center font-semibold text-white hover:bg-brand-dark"
           >
-            Gallery
-          </button>
-          <a href="https://www.youtube.com/@Game_Time_Network" target="_blank" rel="noreferrer">
-            <button className="cursor-pointer mt-4 w-full border border-black bg-white text-[#0d1723] py-4 rounded-[9px] hover:bg-[#be4725] hover:text-white hover:border-[#be4725] transition-all duration-200 font-semibold">
-              Subscribe
-            </button>
+            Subscribe on YouTube
           </a>
         </div>
       </div>

@@ -1,53 +1,36 @@
 import React from "react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
-
-const galleryImages = [
-  "/images/20260404_194201[1].JPG",
-  "/images/20260404_194351[1].JPG",
-  "/images/20260404_194743[1].JPG",
-  "/images/20260404_201010[1].JPG",
-  "/images/20260404_201545[1].JPG",
-  "/images/IMG_0202[1].JPG",
-  "/images/IMG_0204[1].JPG",
-  "/images/IMG_7041.jpeg[1].jpg",
-  "/images/gallery1.jpg",
-  "/images/gallery2.jpg",
-  "/images/gallery3.jpg",
-  "/images/gallery4.jpg",
-  "/images/gallery5.jpg",
-  "/images/25807.jpg",
-  "/images/25808.jpg",
-  "/images/25809.jpg",
-  "/images/healthcare-img.jpg",
-];
+import { galleryImages } from "@/data/galleryImages";
 
 export default function GalleryPage() {
   return (
     <>
       <Navbar isGallery={true} />
-      <section className="w-full min-h-screen bg-[#0d1723] py-20">
-        {/* Header */}
+      <section className="on-dark w-full min-h-screen bg-navy pt-32 pb-20">
         <div className="text-center px-4 mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">Gallery</h1>
-
-          <div className="mx-auto mt-4 w-20 h-1 rounded-full bg-[#be4725]"></div>
-
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+            Moments
+          </p>
+          <h1 className="font-display text-5xl md:text-7xl font-bold uppercase text-white">
+            Gallery
+          </h1>
+          <div className="mx-auto mt-5 w-14 h-1 rounded-full bg-brand"></div>
           <p className="text-white/70 text-lg mt-6 max-w-2xl mx-auto">
             Photos from Game Time Network events, live shows, and community
             moments.
           </p>
         </div>
 
-        {/* Infinite Style Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[1px] bg-[#0d1723]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 px-1">
           {galleryImages.map((image, index) => (
-            <div key={index} className="relative aspect-square overflow-hidden">
+            <div key={image} className="relative aspect-square overflow-hidden">
               <Image
                 src={image}
-                alt={`Gallery image ${index + 1}`}
+                alt={`Game Time Network event photo ${index + 1}`}
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+                className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           ))}
