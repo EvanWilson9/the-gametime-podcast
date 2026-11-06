@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-ink to-transparent" />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-4xl px-4 pt-20 text-center animate-fadeIn">
+      <div className="relative z-10 mx-auto w-full max-w-4xl px-4 pb-12 pt-20 text-center animate-fadeIn md:pb-12">
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.25em] text-brand-tint">
           Eastside Sports Network
         </p>
