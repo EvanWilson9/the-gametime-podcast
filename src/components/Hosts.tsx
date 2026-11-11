@@ -71,7 +71,7 @@ const Hosts = () => (
         }
       />
 
-      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+      <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
         {hosts.map((host) => (
           <article
             key={host.name}
