@@ -41,6 +41,17 @@ const hosts = [
       email: "host3@gametime.com",
     },
   },
+  {
+    name: "Reggie Sykes",
+    image: "/images/reggie_sykes_img.jpg",
+    role: "Producer of Bias With a Little Truth",
+    bio: "A Warren Central alum, die-hard Colts, Pacers, and Southern University Jaguars fan who keeps it real. Expect passionate sports talk, honest opinions, bold takes, and plenty of fan interaction. A golf enthusiast and chess player. Fans, rivals, are welcome to chat. Just know he always has a response ready. 🏈🏀⛳♟️🐆",
+    socials: {
+      twitter: "",
+      instagram: "",
+      email: "",
+    },
+  },
 ];
 
 const iconLink = "text-white/60 transition-colors hover:text-brand-tint";
@@ -60,7 +71,7 @@ const Hosts = () => (
         }
       />
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
         {hosts.map((host) => (
           <article
             key={host.name}
@@ -82,33 +93,41 @@ const Hosts = () => (
             <p className="mt-4 flex-1 leading-relaxed text-muted-foreground">
               {host.bio}
             </p>
-            <div className="mt-6 flex gap-5 border-t border-white/10 pt-5">
-              <a
-                href={host.socials.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${host.name} on X`}
-                className={iconLink}
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href={host.socials.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${host.name} on Instagram`}
-                className={iconLink}
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href={`mailto:${host.socials.email}`}
-                aria-label={`Email ${host.name}`}
-                className={iconLink}
-              >
-                <Mail className="h-5 w-5" />
-              </a>
-            </div>
+            {(host.socials.twitter || host.socials.instagram || host.socials.email) && (
+              <div className="mt-6 flex gap-5 border-t border-white/10 pt-5">
+                {host.socials.twitter && (
+                  <a
+                    href={host.socials.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${host.name} on X`}
+                    className={iconLink}
+                  >
+                    <Twitter className="h-5 w-5" />
+                  </a>
+                )}
+                {host.socials.instagram && (
+                  <a
+                    href={host.socials.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${host.name} on Instagram`}
+                    className={iconLink}
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                )}
+                {host.socials.email && (
+                  <a
+                    href={`mailto:${host.socials.email}`}
+                    aria-label={`Email ${host.name}`}
+                    className={iconLink}
+                  >
+                    <Mail className="h-5 w-5" />
+                  </a>
+                )}
+              </div>
+            )}
           </article>
         ))}
       </div>
